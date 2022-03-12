@@ -308,8 +308,8 @@ svg:not(:root){
    margin:5% 0 0 0;
    padding-left:4%;
    img{
-     height:60px;
-     width:60px;
+     height:70px;
+     width:80px;
      border-radius:50%;
    }
    .big{
@@ -353,11 +353,14 @@ svg:not(:root){
       bottom:10px;
     }
   }
+  .row.form-box{
+    margin-top: 5%;
+  }
   form{
     width:100%;
     input{
       display:block;
-      margin:20px auto;
+      margin:0px auto 20px;
       padding:20px 250px 20px 5px;
       max-width:100%;
       border-width:.1px;
@@ -365,7 +368,7 @@ svg:not(:root){
     textarea{
       display:block;
       margin:20px auto;
-      padding:20px 250px 150px 5px;
+      padding:10px 250px 150px 5px;
       max-width:100%;
       border-width:.1px;
     }
@@ -418,6 +421,9 @@ svg:not(:root){
   p{
     padding:10px 0;
   }
+  p.title{
+    padding-bottom: 25px;
+  }
   .icons{
     i{
       font-size:24px;
@@ -446,9 +452,10 @@ svg:not(:root){
       max-width:100%;
       border-width:0.1px;
       border-radius:3px;
+      margin: 0 auto;
   }
   .button{
-    margin:10px 0 0 0 ;
+    margin:15px 0 0 0 ;
     padding: 8px 20px;
     border-radius:6px;
     background-color:$keyColor;
@@ -469,7 +476,7 @@ svg:not(:root){
 } 
 }
 .copy{
-  margin-top:2rem;
+  margin:5% 0 2.5%;
   text-align:center;
   p{
     color:$background;
@@ -567,10 +574,10 @@ span {
          position:fixed;
          top:0;
          right:0;
-         z-index:101;
          background: linear-gradient(to right, #51DBBD, #77B1DD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
          transition:0.4s ease-in-out;
          opacity:0;
+         visibility: hidden;
          li{
              text-align:center;
              padding:10px 0;
@@ -595,6 +602,7 @@ span {
 }
 .ham.open{
 opacity:1;
+visibility: inherit;
 }
 }
 //topcover
@@ -614,7 +622,7 @@ height:600px;
   line-height:2;
 }
 .download{
-    padding: 16px 36px;
+    padding: 10px;
     border-radius:6px;
     background-color:$keyColor;
     color:$background;
@@ -689,7 +697,7 @@ svg:not(:root){
   }
   
   .service-button{
-    padding: 14px 32px;
+    padding: 10px;
     border-radius:6px;
     background-color:$baseColor;
     border:solid 2px $baseColor;
@@ -796,7 +804,7 @@ svg:not(:root){
    }
    img{
      height:70px;
-     width:70px;
+     width:80px;
      border-radius:50%;
    }
    .big{
@@ -843,9 +851,9 @@ svg:not(:root){
     width:100%;
     input{
       display:block;
-      margin:30px auto;
+      margin:10px auto 30px;
       padding:20px 2px;
-      width:80%;
+      width:90%;
       border-width:.1px;
     }
     textarea{
@@ -863,7 +871,6 @@ svg:not(:root){
       margin-top:10px;
       margin-right:auto;
       margin-left:auto;
-      padding:16px 32px;
       color:$background;
     font-weight:bold;
     letter-spacing:.2rem;
@@ -911,13 +918,13 @@ svg:not(:root){
   p{
     padding:5px 0;
     text-align:center;
-    @include fontsize(12);
+    @include fontsize(14);
   }
   .icon{
     text-align:center;
     margin:10px 0;
     .icons{
-      padding:0 8%;
+      padding:0 7%;
     i{
       font-size:56px;
       color:$subColor;
@@ -927,10 +934,13 @@ svg:not(:root){
   .footer-list{
     display:flex;
     justify-content:space-around;
+    flex-direction: column;
+    text-align: center;
       li{
         padding:0;
         letter-spacing:0rem;
-        @include fontsize(12);
+        @include fontsize(14);
+        margin:10px 0; 
         a{
           color:$fontColor;
           transition:.3s;
@@ -943,18 +953,18 @@ svg:not(:root){
   }
   .sub{
     font-weight:bold;
-    padding-bottom:15px;
+    padding-bottom:10px;
   }
   input{
       display:inline-block;
-      padding:20px 10px;
-      width:80%;
+      padding:10px 10px;
+      width:90%;
       border-width:0.1px;
       border-radius:3px;
   }
   .button{
+    padding: 10px;
     margin:20px 0 0 0 ;
-    padding: 16px 32px;
     border-radius:6px;
     background-color:$keyColor;
     color:$background;
@@ -974,7 +984,7 @@ svg:not(:root){
 } 
 }
 .copy{
-  margin-top:2rem;
+  margin:10% 0 5%;
   text-align:center;
   p{
     color:$background;
